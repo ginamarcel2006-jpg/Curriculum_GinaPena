@@ -1,0 +1,144 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edf2;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.profesion {
+    color: #cbd5e1;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dce3ea;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    color: #243b53;
+    font-size: 21px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    border-left: 4px solid #3b82a0;
+}
+
+/* TEXTOS */
+p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+strong {
+    color: #243b53;
+}
+
+/* EXPERIENCIA LABORAL */
+.experiencia {
+    margin-bottom: 20px;
+}
+
+.experiencia h3 {
+    color: #3b647c;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.experiencia h3 span {
+    color: #777;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+/* LISTAS */
+ul {
+    margin: 8px 0 0 25px;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+/* HABILIDADES */
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;
+    margin-left: 0;
+}
+
+.habilidades li {
+    background-color: #edf3f7;
+    color: #243b53;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+    }
+    .foto {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    }
+}
